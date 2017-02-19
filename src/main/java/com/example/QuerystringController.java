@@ -28,7 +28,7 @@ public class QuerystringController {
         return String.format("sort-by is %s; owner is %s", tasks.getSortBy(), tasks.getOwner());
     }
 
-    public class Tasks {
+    public static class Tasks {
         private String owner;
         private String sortBy;
 

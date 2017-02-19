@@ -29,5 +29,29 @@ public class PathParameterController {
     public String getParametersAsObject(PathParams params) {
         return String.format("activity:%s duration:%s", params.getActivity(), params.getDuration());
     }
+
+    public static class PathParams {
+        private String activity;
+        private String duration;
+
+        public PathParams() {
+        }
+
+        public String getActivity() {
+            return activity;
+        }
+
+        public void setActivity(String activity) {
+            this.activity = activity;
+        }
+
+        public String getDuration() {
+            return duration;
+        }
+
+        public void setDuration(String duration) {
+            this.duration = duration;
+        }
+    }
 }
 
